@@ -1,0 +1,18 @@
+SSH stands for Secure Shell. It is a secure way to transfer files between two machines. 
+
+checking for existing SSH keys: ls -a -l ~/.ssh
+Command to create SSH Keys: ssh-keygen -t rsa -b 4096 -C "brainstorm4x@gmail.com"
+-t: Type
+rsa: initials of the 3 creators
+-b: number of bits of security, 4096 is widely used.
+-C: comments, email address is generally used. 
+
+Checking user agent: eval "$(ssh-agent -s)"
+output will be: Agent pid 15797
+
+
+Adding the identity: ssh-add ~/.ssh/id_rsa
+
+Checking content of the public rsa file: cat ~/.ssh/id_rsa.pub
+
+
