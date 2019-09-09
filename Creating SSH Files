@@ -10,7 +10,6 @@ rsa: initials of the 3 creators
 Checking user agent: eval "$(ssh-agent -s)"
 output will be: Agent pid 15797
 
-
 Adding the identity: ssh-add ~/.ssh/id_rsa
 
 Checking content of the public rsa file: cat ~/.ssh/id_rsa.pub
